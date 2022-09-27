@@ -1,0 +1,68 @@
+.topic_main {
+  overflow: hidden;
+  width: 100%;
+  display: flex !important;
+  padding: 1em 0;
+}
+
+.topic_article {
+  float: left;
+}
+
+.topic_article p {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.topic_article ol {
+  margin-left: 45px;
+  font-size: 22px;
+}
+
+.topic_video {
+  float: right;
+}
+
+.topic_article,
+.topic_video {
+  width: 50%;
+}
+
+.topic_diagram {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.topic_diagram p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.topic_diagram_image {
+  width: 650px;
+  height: 270px;
+  border: 2px solid #333;
+}
+
+/* Media queries */
+@media (max-width: 972px) {
+  .topic_main {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .topic_article {
+    margin-bottom: 25px;
+  }
+  .topic_article,
+  .topic_video {
+    width: 100% !important;
+    float: none !important;
+  }
+  .topic_video {
+    margin: auto auto;
+  }
+}

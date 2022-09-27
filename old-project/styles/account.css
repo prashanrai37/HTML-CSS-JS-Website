@@ -1,0 +1,38 @@
+.account_main {
+  padding: 1em;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 192px;
+  height: 192px;
+  border: 2px solid #333 !important;
+}
+
+.account_main aside {
+  margin-left: 30px;
+}
+
+.account_main aside p {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 970px) {
+  .account_main {
+    height: 30%;
+  }
+}
+
+@media (max-width: 492px) {
+  .account_main aside p {
+    font-size: 18px;
+  }
+  img {
+    width: 128px;
+    height: 128px;
+  }
+}

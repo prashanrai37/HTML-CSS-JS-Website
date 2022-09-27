@@ -1,0 +1,28 @@
+.error {
+  width: 50vw !important;
+  padding: 5px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 10px !important;
+}
+
+.success {
+  margin-top: 10px !important;
+  width: 50vw !important;
+  padding: 5px;
+  border: 1px solid #4ba942;
+  color: #4ba942;
+  background: #def2de;
+  text-align: left;
+  margin: 0 auto;
+}
+
+@media (max-width: 488px) {
+  .error,
+  .success {
+    width: 90vw !important;
+  }
+}
