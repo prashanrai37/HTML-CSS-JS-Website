@@ -15,6 +15,19 @@ body {
   color: #555;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
 .section-hero {
   background-color: #a2adb2;
   padding: 9.6rem 0;
@@ -85,5 +98,5 @@ body {
 }
 
 .margin-right-sm {
-  margin-right: 1rem;
+  margin-right: 1rem !important;
 }
