@@ -87,14 +87,10 @@
 
 .inpage-video {
   justify-content: center;
-  display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
-
   max-width: 130rem;
-  margin: 0 auto;
-
-  padding: 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .homepage-video {
