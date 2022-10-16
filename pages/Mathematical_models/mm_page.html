@@ -22,6 +22,14 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="general.js"></script>
+    <script defer src="mm_page.js"></script>
+
     <link rel="stylesheet" href="/general.css" />
     <link rel="stylesheet" href="mm_page.css" />
     <link rel="stylesheet" href="/queries.css" />
@@ -29,91 +37,151 @@
     <title>Statistics & Computing - Mathematical Models</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-top" id="nav-id">
-        <a href="/index.html"
-          ><img class="logo" alt="S&C logo" src="/index_media\SC-logo.png"
-        /></a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li>
-              <a
-                class="main-nav-link"
-                href="/pages\Account_page\account_page.html"
-                >Account</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link" href="/pages\Quizes\quiz.html">Quiz</a>
-            </li>
-            <li>
-              <a class="main-nav-link" href="/pages\Log _in\login.html"
-                >Log-in</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header" id="nav-id">
+      <div class="combined-header">
+        <div class="header-top">
+          <a href="/index.html"
+            ><img class="logo" alt="S&C logo" src="/index_media\SC-logo.png"
+          /></a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link"
+                  href="/pages\Account_page\account_page.html"
+                  >Account</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link" href="/pages\Quizes\quiz.html">Quiz</a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="/pages\Log _in\login.html"
+                  >Log-in</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <div class="header-bottom">
-        <nav class="sub-nav">
-          <ul class="sub-nav-list">
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Mathematical_models\mm_page.html"
-                >Mathematical Models</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Measurement_of_Dispersion\mod_page.html"
-                >Measurements Of Dispersion</a
-              >
-            </li>
-            <li>
-              <a class="sub-nav-link" href="/pages\Porbability\probability.html"
-                >Probability</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Summary_Of_Data\sod_page.html"
-                >Summary Of Data</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Representation_Of_Data\rod_page.html"
-                >Representation Of Data</a
-              >
-            </li>
-            <li>
-              <a class="sub-nav-link" href="/pages\Correlation\correlation.html"
-                >Correlation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="mobile-header-fix">
+          <div class="header-bottom">
+            <nav class="sub-nav">
+              <ul class="sub-nav-list">
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Mathematical_models\mm_page.html"
+                    >Mathematical Models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Measurement_of_Dispersion\mod_page.html"
+                    >Measurements Of Dispersion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Porbability\probability.html"
+                    >Probability</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Summary_Of_Data\sod_page.html"
+                    >Summary Of Data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Representation_Of_Data\rod_page.html"
+                    >Representation Of Data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Correlation\correlation.html"
+                    >Correlation</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="intro-tab">
+      <section class="info-tab">
         <h1 class="heading-primary">Mathematical Models</h1>
-        A mathematical model is a simplified representation of a real world
-        situation. They are used to make predictions and by analysing them it
-        provides users with a better understanding of the real situation. An
-        example of mathematical model being used in computer science is
-        scheduling done by operating systems. Mathematical models are useful
-        because: They are quick and easy to produce They are easy to understand
-        Variables can be readily changed making them versatile They are used to
-        make predictions They can help provide control However they must be
-        treated with caution as they tend to work in certain scenarios only and
-        simplification of problems often leads to omission of variables
+        <p>
+          A mathematical model is a simplification of a real-world situation. It
+          can be used to make predictions and forecasts about real-world
+          situations. This helps solve and improve the understanding of
+          real-world situations by analysing the results and the model.
+        </p>
+        <p>
+          An example of mathematical model being used in computer science is
+          scheduling done by operating systems.
+        </p>
+        <p>
+          Mathematical models are useful because: They are quick and easy to
+          produce They are easy to understand Variables can be readily changed
+          making them versatile They are used to make predictions They can help
+          provide control
+        </p>
+        <p>
+          However they must be treated with caution as they tend to work in
+          certain scenarios only and simplification of problems often leads to
+          omission of variables
+        </p>
+        <p>
+          The process of designing a model generally involves seven stages,
+          outlined below. 
+          <ol>
+            <li>Stage 1: The recognition of a real-world problem</li>
+            <li>Stage 2: A mathematical model is devised</li>
+            <li>Stage 3: Model used to make
+              predictions about the behaviour of the real-world problem</li>
+            <li>Stage 4:
+              Experimental data are collected from the real world</li>
+            <li>Stage 5:
+              Comparisons are made against the devised model</li>
+            <li>Stage 6: Statistical
+              concepts are used to test how well the model describes the real-world
+              problem</li>
+            <li>Stage 7: Model is refined</li>
+          </ol>      
+        </p>
+        <p>
+          A scientist is investigating the population of owls and notices that the population varies year
+to year. Give a summary of the stages that are needed to create a mathematical model for this
+population variation.
+1 Some assumptions need to be made to ensure the model is manageable. Birth and death rates of
+owls should be included, but food supply and environment changes should not.
+2 Plan a mathematical model which will include diagrams.
+3 Use this model to predict the population of the owls over a period of years.
+4 Include and collect fresh data that match the conditions of the predicted values. You may also
+use historical data from the previous years.
+5 Analyse the data using techniques you will meet in this course to compare the predicted data
+with the experimental data.
+6 Use statistical tests that will provide an objective means of deciding if the differences between
+the model's predictions and experimental data are within acceptable limits.
+If the predicted values do not match the experimental data closely enough, then the model can be
+refined. This will involve repeating and refining steps 2-6. This model is then constantly refined
+making the model more and more accurate. 
+        </p>
       </section>
       <section class="video-tab"></section>
       <section class="summary-questions"></section>
@@ -146,7 +214,7 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2022 Prashan Rai, Inc.<br />
+            Copyright &copy; <span class="year">2022</span> Prashan Rai, Inc.<br />
             All rights reserved.
           </p>
         </div>
