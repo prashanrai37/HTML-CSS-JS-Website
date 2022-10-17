@@ -75,6 +75,10 @@ body {
   padding: 2rem;
 }
 
+iframe {
+  border-radius: 40px;
+}
+
 iframe:focus {
   outline: none;
 }
@@ -233,6 +237,39 @@ iframe[seamless] {
   font-size: 1.6rem;
   line-height: 1.05;
   margin-bottom: 0.5rem;
+}
+
+/***************************/
+/* Quiz */
+/***************************/
+
+.question-text {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.question-text-sub {
+  font-size: 1.6rem;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  width: 8rem;
+  height: 5rem;
+  border-radius: 40px;
+  background-color: #586b74;
+  color: white;
+  border: none;
+}
+
+.submit-btn:active,
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #6a7b83;
 }
 
 /***************************/

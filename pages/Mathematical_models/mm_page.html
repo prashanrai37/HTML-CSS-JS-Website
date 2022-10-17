@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="mm_page.css" />
     <link rel="stylesheet" href="/queries.css" />
 
-    <link rel="icon" href="index_media\favicon.png">
+    <link rel="icon" href="/index_media\favicon.png">
 
     <title>Mathematical Models - Statistics & Computing</title>
   </head>
@@ -288,7 +288,36 @@
       <div class="spacer"></div>
 
       <section class="section-tab center-tab" style="background-color:#a2adb2;">
-      <div class="steps-tab"></div></section>
+      <div class="steps-tab">
+        <form name = "mm_quiz" id="mm_quiz">
+          <div>
+            <p class="question-text">1. Mathematical models help simplify real world scenarios?</p>
+            <p class="question-text-sub"><input type="radio" name="question1" value="1a">a) True</p>
+            <p class="question-text-sub"><input type="radio" name="question1" value="1b">b) False</p>
+          </div>
+
+          <div>
+            <p class="question-text">2. Which of the following is not a benefit of mathematical models?</p>
+            <p class="question-text-sub"><input type="radio" name="question2" value="2a">a) They are quick and easy to produce</p>
+            <p class="question-text-sub"><input type="radio" name="question2" value="2b">b) They are easy to understand</p>
+            <p class="question-text-sub"><input type="radio" name="question2" value="2c">c) They provide the accurate representation of the situation</p>
+            <p class="question-text-sub"><input type="radio" name="question2" value="2d">d) Variables can be readily changed making them versatile</p>
+          </div>
+
+          <div>
+            <p class="question-text">3. Mathematical models must be treated with caution as simplification of problems often leads to ______ of variables.
+            </p>
+            <p class="question-text-sub"><input type="radio" name="question3" value="3a">a) Omission</p>
+            <p class="question-text-sub"><input type="radio" name="question3" value="3b">b) Reproduction</p>
+            <p class="question-text-sub"><input type="radio" name="question3" value="3c">c) Clarity</p>
+            <p class="question-text-sub"><input type="radio" name="question3" value="3d">d) Display</p>
+          </div>
+
+          <input class="submit-btn" type="button" value="Submit" onclick="check()">
+          <span id="result">Hello</span>
+
+        </form>
+      </div></section>
     </main>
     <section class="footer">
       <div class="container grid grid--3--cols">

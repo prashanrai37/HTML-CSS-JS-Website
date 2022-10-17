@@ -48,17 +48,3 @@
 .inpage-video {
   background-color: #eceff0;
 }
-
-.homepage-video {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-iframe:focus {
-  outline: none;
-}
-
-iframe[seamless] {
-  display: block;
-}
