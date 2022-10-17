@@ -1,13 +1,8 @@
 function check() {
-
-    console.log("Hello World")
-
   var c = 0;
-  var q1 = document.quiz.question1.value;
-  var q2 = document.quiz.question2.value;
-  var q3 = document.quiz.question3.value;
-
-  var quiz = document.getElementById('mm_quiz');
+  var q1 = document.mm_quiz.question1.value;
+  var q2 = document.mm_quiz.question2.value;
+  var q3 = document.mm_quiz.question3.value;
 
   if (q1 == '1a') {
     c++;
@@ -18,11 +13,16 @@ function check() {
   if (q3 == '3a') {
     c++;
   }
-  quiz.style.display = 'none';
 
   if (c < 3) {
-    document.getElementById('result') = `You got ${c} out of 3. Try again.`;
+    document.getElementById(
+      'result'
+    ).innerText = `You got ${c} out of 3. Try again.`;
+    document.getElementById('result').style.backgroundColor = '#fff';
   } else {
-    document.getElementById('result') = `Congratulations! You got ${c} out of 3.`;
+    document.getElementById(
+      'result'
+    ).innerText = `Congratulations! You got ${c} out of 3.`;
+    document.getElementById('result').style.backgroundColor = '#fff';
   }
 }

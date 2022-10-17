@@ -17,10 +17,12 @@
 
 .mm-items {
   font-size: 1.7rem;
+  line-height: 2rem;
 }
 
 .mm-step-list {
   list-style: none;
+  line-height: 2rem;
 }
 
 .steps-tab {
