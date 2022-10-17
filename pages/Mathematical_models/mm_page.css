@@ -2,53 +2,13 @@
 /* Info Section */
 /***************************/
 
-.section-info-tab {
-  background-color: #a2adb2;
-}
-
-.info-tab {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-  margin-top: 4rem;
-  text-decoration: underline;
-}
-
-.info-description {
-  font-size: 2rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-.info-description-sub {
-  font-size: 1.6rem;
-  line-height: 1.05;
-  margin-bottom: 0.5rem;
+.procon-grid {
+  padding: 1rem 0 1rem 1rem;
 }
 
 .mm-img {
   width: 100%;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-.margin-bottom-md {
-  margin-bottom: 4.8rem !important;
+  border-radius: 40px;
 }
 
 .mm-list {
@@ -56,7 +16,29 @@
 }
 
 .mm-items {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+}
+
+.mm-step-list {
+  list-style: none;
+}
+
+.steps-tab {
+  padding: 1rem 0 1rem 1rem;
+}
+
+/***************************/
+/* Image */
+/***************************/
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 /***************************/

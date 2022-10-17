@@ -53,6 +53,36 @@ body {
   overflow-x: hidden;
 }
 
+.spacer {
+  padding: 1rem 0;
+}
+
+/***************************/
+/* Video */
+/***************************/
+
+.inpage-video {
+  background-color: #eceff0;
+  max-width: 130rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
+}
+
+.homepage-video {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}
+
 /***************************/
 /* Header */
 /***************************/
@@ -158,6 +188,51 @@ body {
 
 .icon-mobile-nav[name='close-outline'] {
   display: none;
+}
+
+/***************************/
+/* Sections */
+/***************************/
+
+.spacer {
+  padding: 1rem 0;
+}
+
+.section-tab {
+  max-width: 130rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
+}
+
+.center-tab {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1rem 3.2rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+
+.info-description {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.info-description-sub {
+  font-size: 1.6rem;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
 }
 
 /***************************/

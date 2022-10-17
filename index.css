@@ -4,6 +4,10 @@
 
 .section-hero {
   background-color: #a2adb2;
+  max-width: 130rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
 }
 
 .hero {
@@ -84,25 +88,6 @@
 /***************************/
 /* Video */
 /***************************/
-
-.inpage-video {
-  background-color: #eceff0;
-}
-
-.homepage-video {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-iframe:focus {
-  outline: none;
-}
-
-iframe[seamless] {
-  display: block;
-}
-
 .video-title-container {
   text-align: center;
   padding-top: 2rem;
@@ -115,6 +100,10 @@ iframe[seamless] {
 .info-cards-section {
   background-color: #a2adb2;
   padding-bottom: 5rem;
+  max-width: 130rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 40px;
 }
 
 .feature-heading-container {
