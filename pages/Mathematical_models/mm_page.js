@@ -15,14 +15,14 @@ function check() {
   }
 
   if (c < 3) {
+    document.getElementById('result').style.backgroundColor = '#fff';
     document.getElementById(
       'result'
     ).innerText = `You got ${c} out of 3. Try again.`;
-    document.getElementById('result').style.backgroundColor = '#fff';
   } else {
+    document.getElementById('result').style.backgroundColor = '#fff';
     document.getElementById(
       'result'
     ).innerText = `Congratulations! You got ${c} out of 3.`;
-    document.getElementById('result').style.backgroundColor = '#fff';
   }
 }

@@ -129,10 +129,11 @@
         <div class="center-tab">
           <h1 class="heading-primary">Measurements Of Dispersion</h1>
           <p class="info-description">
-            In statistics, we collect observations or measurements of some
-            variables. These observations are known as data. Variables
-            associated with non-numerical data are qualitative variables, and
-            variables associated with numerical data are quantitative variables.
+            In statistics, dispersion is the extent to which a distribution is
+            stretched or squeezed. Common examples of measures of statistical
+            dispersion are the variance, standard deviation, and interquartile
+            range. For instance, when the variance of data in a set is large,
+            the data is widely scattered.
           </p>
           <p class="info-description">
             The study of spread of data is continusly used throghtout computer
@@ -146,17 +147,79 @@
 
       <section class="section-tab" style="background-color: #eceff0">
         <div class="center-tab">
-          <h1 class="heading-primary">Measurements Of Dispersion</h1>
-          <p class="info-description">
-            In statistics, we collect observations or measurements of some
-            variables. These observations are known as data. Variables
-            associated with non-numerical data are qualitative variables, and
-            variables associated with numerical data are quantitative variables.
+          <p class="info-description">Range and Quartiles:</p>
+          <p class="info-description-sub">
+            The range of a set of data is very simple to find. range - highest
+            value- lowest value Quartiles-Q1, Q2, Q3, spil the data into four
+            parts. 25% of the observations should have a vlaue of less than the
+            lower quartile, Q1, 50% of the observations should be below the
+            median,Q2 and 75% of the observations should be below the upper
+            quartile, Q3.
           </p>
-          <p class="info-description">
-            The study of spread of data is continusly used throghtout computer
-            science. One of the most popular uses in current times is data
-            analysis done by large companies.
+          <img src="\index_media\Quartiles.png" />
+
+          <div class="spacer"></div>
+
+          <div class="grid grid--2--cols">
+            <div class="method-discrete">
+              <p class="info-description">Method used for discrete data</p>
+              <ul>
+                <li>
+                  <p>
+                    To calculate the lower quartile, Q1, divide n by 4. When
+                    <sup>n</sup>&frasl;<sub>4</sub> is a whole number find the
+                    mid-point of the corrresponding term and the term above.
+                    When <sup>n</sup>&frasl;<sub>4</sub> is not a whole number
+                    round the number up and pick the corresponding term.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    To calculate the upper quartile, Q3, divide n by 4 and
+                    multiply by 3. When
+                    <sup>3n</sup>&frasl;<sub>4</sub> is a whole number find the
+                    mid-point of the corrresponding term and the term above.
+                    When <sup>3n</sup>&frasl;<sub>4</sub> is not a whole number
+                    round the number up and pick the corresponding term.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="method-continous">
+              <p class="info-description">Method used for continous data</p>
+              <ul>
+                <li>
+                  <p>
+                    To calculate the lower quartile, Q1, divide n by 4 and use
+                    interpolation to find the corresponding value.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    To calculate the upper quartile, Q3, divide n by 4 and
+                    multiply by 3 and use interpolation to find the
+                    corresponding value.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="info-description-sub">
+            interquartile range = upper quartile - lower quartile
+          </p>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="section-tab" style="background-color: #a2adb2">
+        <div class="center-tab">
+          <p class="info-description">Standard Deviation and Variance:</p>
+          <p class="info-description-sub">
+            The deviaiton of an observation x from the mean is given by x -
+            x&#772;, so one way of measuring the total dispersion (spread) of a
+            set of data is to use variance.
           </p>
         </div>
       </section>
