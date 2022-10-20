@@ -1,16 +1,16 @@
 function check() {
   var c = 0;
-  var q1 = document.mm_quiz.question1.value;
-  var q2 = document.mm_quiz.question2.value;
-  var q3 = document.mm_quiz.question3.value;
+  var q1 = document.mod_quiz.question1.value;
+  var q2 = document.mod_quiz.question2.value;
+  var q3 = document.mod_quiz.question3.value;
 
-  if (q1 == '1a') {
+  if (q1 == '1b') {
     c++;
   }
   if (q2 == '2c') {
     c++;
   }
-  if (q3 == '3a') {
+  if (q3 == '3d') {
     c++;
   }
 

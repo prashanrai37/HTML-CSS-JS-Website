@@ -22,152 +22,339 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="/general.js"></script>
+    <script defer src="mod_page.js"></script>
+
     <link rel="stylesheet" href="/general.css" />
-    <link rel="stylesheet" href="mm.css" />
+    <link rel="stylesheet" href="mod_page.css" />
     <link rel="stylesheet" href="/queries.css" />
 
-    <title>Statistics & Computing - Homepage</title>
+    <link rel="icon" href="/index_media\favicon.png" />
+
+    <title>Probability- Statistics & Computing</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header-top" id="nav-id">
-        <a href="/index.html"
-          ><img class="logo" alt="S&C logo" src="/index_media\SC-logo.png"
-        /></a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li>
-              <a
-                class="main-nav-link"
-                href="/pages\Account_page\account_page.html"
-                >Account</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link" href="/pages\Quizes\quiz.html">Quiz</a>
-            </li>
-            <li>
-              <a class="main-nav-link" href="/pages\Log _in\login.html"
-                >Log-in</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header" id="nav-id">
+      <div class="combined-header">
+        <div class="header-top">
+          <a href="/index.html"
+            ><img class="logo" alt="S&C logo" src="/index_media\SC-logo.png"
+          /></a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link"
+                  href="/pages\Account_page\account_page.html"
+                  >Account</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link" href="/pages\Quizes\quiz.html">Quiz</a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="/pages\Log _in\login.html"
+                  >Log-in</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <div class="header-bottom">
-        <nav class="sub-nav">
-          <ul class="sub-nav-list">
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Mathematical_models\mm_page.html"
-                >Mathematical Models</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Measurement_of_Dispersion\mod_page.html"
-                >Measurements Of Dispersion</a
-              >
-            </li>
-            <li>
-              <a class="sub-nav-link" href="/pages\Porbability\probability.html"
-                >Probability</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Summary_Of_Data\sod_page.html"
-                >Summary Of Data</a
-              >
-            </li>
-            <li>
-              <a
-                class="sub-nav-link"
-                href="/pages\Representation_Of_Data\rod_page.html"
-                >Representation Of Data</a
-              >
-            </li>
-            <li>
-              <a class="sub-nav-link" href="/pages\Correlation\correlation.html"
-                >Correlation</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="mobile-header-fix">
+          <div class="header-bottom">
+            <nav class="sub-nav">
+              <ul class="sub-nav-list">
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Mathematical_models\mm_page.html"
+                    >Mathematical Models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Measurement_of_Dispersion\mod_page.html"
+                    >Measurements Of Dispersion</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Porbability\probability.html"
+                    >Probability</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Summary_Of_Data\sod_page.html"
+                    >Summary Of Data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Representation_Of_Data\rod_page.html"
+                    >Representation Of Data</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="sub-nav-link"
+                    href="/pages\Correlation\correlation.html"
+                    >Correlation</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
     </header>
 
     <main>
-      <section class="footer">
-        <div class="container grid grid--3--cols">
-          <div class="logo-col">
-            <a href="https://github.com/prashanrai37" class="footer-logo">
-              <img
-                class="logo"
-                alt="PR logo"
-                src="/index_media\PRlogoColor.png"
-              />
-            </a>
-            <ul class="social-links">
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon name="logo-instagram"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon name="logo-facebook"></ion-icon
-                ></a>
-              </li>
-              <li>
-                <a class="footer-link" href="#"
-                  ><ion-icon name="logo-twitter"></ion-icon
-                ></a>
-              </li>
-            </ul>
-            <p class="copyright">
-              Copyright &copy; 2022 Prashan Rai, Inc.<br />
-              All rights reserved.
-            </p>
-          </div>
+      <section class="section-tab" style="background-color: #a2adb2">
+        <div class="center-tab">
+          <h1 class="heading-primary">Probabilty</h1>
+          <p class="info-description">
+            If you want to predict the chance of something happening in the
+            future, you use probability.
+          </p>
+          <ul>
+            <li>
+              An experiment is a repeatable process that gives rise to a number
+              of outcomes.
+            </li>
+            <li>An event is a collection (or set) of one or more outcomes.</li>
+            <li>
+              A sample space is the set of all possible outcomes of an
+              experiment.
+            </li>
+          </ul>
+          <p class="info-description">
+            In general: Probability of an event happening = Number of ways it
+            can happen ÷ Total number of outcomes.
+          </p>
+          <p class="info-description">
+            Probability is a key part of Computing Science. It plays important
+            roles when creating applications for money markets, in weather
+            reporting, in quantum theory and many other areas where statistics
+            are applied to in real world.
+          </p>
+        </div>
+      </section>
 
-          <div class="address-col">
-            <address class="contacts">
-              <p class="footer-heading">Contact us</p>
-              <p class="address" style="color: #a2adb2">
-                Address:321 Random Street, Apart 5, Randomvia 654321
-              </p>
-              <p>
-                <a class="footer-link" href="tel:05921573211"
-                  >Phone:05921573211</a
-                >
-                <a class="footer-link" href="mailto:email@email.co.uk"
-                  >Email:email@email.co.uk</a
-                >
-              </p>
-            </address>
-          </div>
+      <div class="spacer"></div>
 
-          <nav class="nav-col">
-            <p class="footer-heading">Resources</p>
-            <ul class="footer-nav" style="line-height: 2.8">
-              <li>
-                <a
-                  class="footer-link"
-                  href="https://www.linkedin.com/in/prashan-rai-b45b17116/"
-                  >Contact Creater</a
-                >
-              </li>
-              <li><a class="footer-link" href="#">Help Center</a></li>
-              <li><a class="footer-link" href="#">Privacy & terms</a></li>
-            </ul>
-          </nav>
+      <section class="section-tab" style="background-color: #eceff0">
+        <div class="center-tab">
+          <p class="info-description">Venn Diagrams:</p>
+          <p class="info-description-sub">
+            Events can be represented graphically by a Venn diagram. Venn
+            diagrams are named after Hull born mathematician John Venn
+            (1834-1923). We use set notation to identify different areas on a
+            Venn diagram.
+            <br />
+            <br />
+            You can write numbers of outcomes in the Venn diagram or the
+            probability of the events to help solve problems.<br />You can use
+            Venn diagrams to solve probabilityprobelms for three events.
+          </p>
+          <div class="spacer"></div>
+          <img
+            src="\index_media\Venn_diagrams.png"
+            alt="Venn diagramsImage"
+            style="margin: auto; display: block; border-radius: 40px"
+          />
+          <div class="spacer"></div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="section-tab" style="background-color: #a2adb2">
+        <div class="center-tab">
+          <p class="info-description">Visually Looking At Probability</p>
+          <p class="info-description-sub">
+            The deviaiton of an observation x from the mean is given by x -
+            x&#772;, so one way of measuring the total dispersion (spread) of a
+            set of data is to use variance.
+            <br />
+            <br />
+          </p>
+          <img
+            src="\index_media\varriance-equation.png"
+            alt="variance equation"
+          />
+          <p class="info-description-sub">
+            <br />
+            The sqaure root of the variance is called the standard deviaiton.
+          </p>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="inpage-video">
+        <div class="homepage-video" id="video-id">
+          <iframe
+            width="1600"
+            height="900"
+            src="https://www.youtube.com/embed/E4HAYd0QnRc"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <section class="section-tab center-tab" style="background-color: #a2adb2">
+        <div class="steps-tab">
+          <p class="info-description">
+            Calculate the upper quartile, lower quartile and range of these
+            numbers: 1, 2, 2, 5, 6, 8, 10
+          </p>
+          <form name="mod_quiz" id="mod_quiz">
+            <div>
+              <p class="question-text">Lower Quartile:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1a" />a) 1
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1b" />b) 2
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1c" />b) 5
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1d" />b) 6
+              </p>
+            </div>
+
+            <div>
+              <p class="question-text">Upper Quartile:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2a" />a) 1
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2b" />b) 2
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2c" />c) 8
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2d" />d) 10
+              </p>
+            </div>
+
+            <div>
+              <p class="question-text">Range:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3a" />a) 5
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3b" />b) 6
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3c" />c) 8
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3d" />d) 9
+              </p>
+            </div>
+
+            <input
+              class="submit-btn"
+              type="button"
+              value="Submit"
+              onclick="check()"
+            />
+            <span class="results-tab" id="result"></span>
+          </form>
         </div>
       </section>
     </main>
+
+    <div class="spacer"></div>
+
+    <section class="footer">
+      <div class="container grid grid--3--cols">
+        <div class="logo-col">
+          <a href="https://github.com/prashanrai37" class="footer-logo">
+            <img
+              class="logo"
+              alt="PR logo"
+              src="/index_media\PRlogoColor.png"
+            />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> Prashan Rai, Inc.<br />
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <address class="contacts">
+            <p class="footer-heading">Contact us</p>
+            <p class="address" style="color: #a2adb2">
+              Address:<br />321 Random Street, Apart 5, Randomvia 654321
+            </p>
+            <p>
+              <a class="footer-link" href="tel:05921573211"
+                >Phone:05921573211</a
+              >
+              <a class="footer-link" href="mailto:email@email.co.uk"
+                >Email:email@email.co.uk</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav" style="line-height: 2.8">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/prashan-rai-b45b17116/"
+                >Contact Creater</a
+              >
+            </li>
+            <li><a class="footer-link" href="#">Help Center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
   </body>
 </html>
