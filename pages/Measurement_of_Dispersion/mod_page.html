@@ -156,15 +156,15 @@
             median,Q2 and 75% of the observations should be below the upper
             quartile, Q3.
           </p>
-          <img src="\index_media\Quartiles.png" />
+          <img src="\index_media\Quartiles.png" alt="Quartiles Image" style="margin: auto; display: block; border-radius: 40px;"/>
 
           <div class="spacer"></div>
 
-          <div class="grid grid--2--cols">
+          <div class="grid grid--2--cols" style=margin-bottom:3rem !important">
             <div class="method-discrete">
               <p class="info-description">Method used for discrete data</p>
-              <ul>
-                <li>
+              <ul class="mod-list">
+                <li class="mod-items">
                   <p>
                     To calculate the lower quartile, Q1, divide n by 4. When
                     <sup>n</sup>&frasl;<sub>4</sub> is a whole number find the
@@ -173,7 +173,7 @@
                     round the number up and pick the corresponding term.
                   </p>
                 </li>
-                <li>
+                <li class="mod-items">
                   <p>
                     To calculate the upper quartile, Q3, divide n by 4 and
                     multiply by 3. When
@@ -187,14 +187,14 @@
             </div>
             <div class="method-continous">
               <p class="info-description">Method used for continous data</p>
-              <ul>
-                <li>
+              <ul class="mod-list">
+                <li class="mod-items">
                   <p>
                     To calculate the lower quartile, Q1, divide n by 4 and use
                     interpolation to find the corresponding value.
                   </p>
                 </li>
-                <li>
+                <li class="mod-items">
                   <p>
                     To calculate the upper quartile, Q3, divide n by 4 and
                     multiply by 3 and use interpolation to find the
@@ -204,9 +204,8 @@
               </ul>
             </div>
           </div>
-
-          <p class="info-description-sub">
-            interquartile range = upper quartile - lower quartile
+          <p class="info-description" style="text-align: center">
+            Interquartile range = upper quartile - lower quartile
           </p>
         </div>
       </section>
@@ -221,11 +220,98 @@
             x&#772;, so one way of measuring the total dispersion (spread) of a
             set of data is to use variance.
           </p>
+          <img
+            src="\index_media\varriance-equation.png"
+            alt="variance equation"
+          />
+          <p class="info-description-sub">
+            The sqaure root of the variance is called the standard deviaiton.
+          </p>
         </div>
       </section>
 
       <div class="spacer"></div>
+
+      <section class="inpage-video">
+        <div class="homepage-video" id="video-id">
+          <iframe
+            width="1600"
+            height="900"
+            src="https://www.youtube.com/embed/E4HAYd0QnRc"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section-tab center-tab" style="background-color: #a2adb2">
+        <div class="steps-tab">
+          <p>
+            Calculate the upper quartile, lower quartile and range of these
+            numbers: 1, 2, 2, 5, 6, 8, 10
+          </p>
+          <form name="mod_quiz" id="mod_quiz">
+            <div>
+              <p class="question-text">Upper Quartile:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1a" />a) True
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1b" />b) False
+              </p>
+            </div>
+
+            <div>
+              <p class="question-text">Lower Quartile:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2a" />a) They are
+                quick and easy to produce
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2b" />b) They are
+                easy to understand
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2c" />c) They
+                provide the accurate representation of the situation
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2d" />d) Variables
+                can be readily changed making them versatile
+              </p>
+            </div>
+
+            <div>
+              <p class="question-text">Range:</p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3a" />a) Omission
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3b" />b)
+                Reproduction
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3c" />c) Clarity
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3d" />d) Display
+              </p>
+            </div>
+
+            <input
+              class="submit-btn"
+              type="button"
+              value="Submit"
+              onclick="check()"
+            />
+            <span class="results-tab" id="result"></span>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <div class="spacer"></div>
 
     <section class="footer">
       <div class="container grid grid--3--cols">

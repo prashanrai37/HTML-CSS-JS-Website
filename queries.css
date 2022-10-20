@@ -67,7 +67,7 @@
   }
 
   .hero-img {
-    width: hidden;
+    display: none;
   }
 
   .btn--form {

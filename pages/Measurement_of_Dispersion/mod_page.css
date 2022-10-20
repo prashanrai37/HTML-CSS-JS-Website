@@ -1,0 +1,12 @@
+/***************************/
+/* Info Section */
+/***************************/
+
+.mod-list {
+  list-style: square;
+}
+
+.mod-items {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
