@@ -31,7 +31,7 @@
     <script defer src="mod_page.js"></script>
 
     <link rel="stylesheet" href="/general.css" />
-    <link rel="stylesheet" href="mod_page.css" />
+    <link rel="stylesheet" href="probability.css" />
     <link rel="stylesheet" href="/queries.css" />
 
     <link rel="icon" href="/index_media\favicon.png" />
@@ -160,7 +160,9 @@
 
       <section class="section-tab" style="background-color: #eceff0">
         <div class="center-tab">
-          <p class="info-description">Venn Diagrams:</p>
+          <p class="info-description" style="text-decoration: underline">
+            Venn Diagrams:
+          </p>
           <p class="info-description-sub">
             Events can be represented graphically by a Venn diagram. Venn
             diagrams are named after Hull born mathematician John Venn
@@ -195,25 +197,30 @@
             If P(A) = a and P(B) = b
           </p>
           <div class="spacer"></div>
-          <p class="info-description-sub" style="padding-left: 3rem">
-            Addtional Rule P(A &#8746; B) = P(A) + P(B) - P(A &#8745; B)
-          </p>
-          <img
-            src="\index_media\probability_equation.png"
-            alt="probability additional equation"
-            style="border-radius: 40px"
-          />
-          <br />
-          <br />
-          <div class="spacer"></div>
-          <p class="info-description-sub" style="padding-left: 3rem">
-            Multiplicatio Rule P(A &#8746; B) = P(B|A) x P(A)
-          </p>
-          <img
-            src="\index_media\multiplication_equation.png"
-            alt="probability multiplication equation"
-            style="border-radius: 40px"
-          />
+          <div class="probability-grid grid grid--2--cols">
+            <div class="centering-items">
+              <div class="spacer"></div>
+              <p class="info-description-sub">
+                Addtional Rule P(A &#8746; B) = P(A) + P(B) - P(A &#8745; B)
+              </p>
+              <img
+                src="\index_media\probability_equation.png"
+                alt="probability additional equation"
+                style="border-radius: 40px"
+              />
+            </div>
+            <div class="centering-items">
+              <div class="spacer"></div>
+              <p class="info-description-sub">
+                Multiplicatio Rule P(A &#8746; B) = P(B|A) x P(A)
+              </p>
+              <img
+                src="\index_media\multiplication_equation.png"
+                alt="probability multiplication equation"
+                style="border-radius: 40px"
+              />
+            </div>
+          </div>
         </div>
         <div class="spacer"></div>
       </section>
@@ -229,30 +236,54 @@
             When events have no outcomes in common, they are mutually exclusive
           </p>
           <div class="spacer"></div>
-          <p class="info-description-sub" style="padding-left: 3rem">
-            Addtional Rule P(A &#8746; B) = P(A) + P(B) - P(A &#8745; B)
-          </p>
-          <img
-            src="\index_media\mutually_exclusive.png"
-            alt="probability additional equation"
-            style="border-radius: 40px"
-          />
-          <br />
-          <br />
-          <div class="spacer"></div>
-          <p class="info-description-sub" style="padding-left: 3rem">
-            Multiplicatio Rule P(A &#8746; B) = P(B|A) x P(A)
-          </p>
-          <img
-            src="\index_media\multiplication_equation.png"
-            alt="probability multiplication equation"
-            style="border-radius: 40px"
-          />
+          <div class="centering-items">
+            <p class="info-description-sub">
+              Addtional Rule P(A &#8746; B) = P(A) + P(B) - P(A &#8745; B)
+            </p>
+            <br />
+            <img
+              src="\index_media\mutually_exclusive.png"
+              alt="probability additional equation"
+              style="border-radius: 40px"
+            />
+            <br />
+            <div class="spacer"></div>
+            <p class="info-description-sub">
+              Multiplicatio Rule P(A &#8745; B) = P(A) x P(B)
+            </p>
+          </div>
         </div>
         <div class="spacer"></div>
       </section>
 
       <div class="spacer"></div>
+
+      <section class="section-tab" style="background-color: #dadee0">
+        <div class="center-tab">
+          <p class="info-description">Probability Calculator</p>
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget
+        tortor vel arcu gravida pharetra rutrum ut libero. Sed nec sem ac nisi
+        vulputate gravida et nec diam. Curabitur scelerisque cursus magna, sed
+        ultricies urna auctor in. Sed ac placerat nisi. Phasellus velit enim,
+        dapibus eget eleifend ut, viverra sit amet quam. Suspendisse iaculis
+        euismod commodo. In pulvinar, nibh nec cursus congue, ex mi condimentum
+        dui, eu vestibulum augue ante vel urna. Curabitur sit amet finibus leo,
+        quis tristique elit. Sed ac erat dui. Donec lacus metus, sollicitudin
+        condimentum vestibulum eu, pretium a nulla. Proin rhoncus mi ut sapien
+        aliquam ultrices. Sed placerat sem urna. Aenean dictum justo quis metus
+        faucibus tempus. Nullam purus ligula, mattis vitae pulvinar a, imperdiet
+        efficitur nibh. Cras rutrum tristique laoreet. Nulla sodales mauris
+        tincidunt, laoreet est sit amet, aliquam odio. Cras id pharetra diam.
+        Vestibulum maximus et dui at volutpat. Ut id urna malesuada, congue
+        justo eu, ullamcorper mauris. Donec aliquet mi eget metus viverra, eget
+        pharetra lacus consectetur. Quisque aliquam dictum lectus, eget
+        facilisis sem malesuada non. Sed convallis ex nec tellus aliquam auctor.
+        Aenean porta at enim a gravida. Praesent tristique varius felis id
+        fringilla. Praesent sed ex tempor, suscipit magna a, interdum nisl.
+        Mauris pharetra lacus nunc. Aliquam id ex eu lacus ultrices scelerisque
+        eu sit amet nunc.
+      </section>
 
       <section class="inpage-video">
         <div class="homepage-video" id="video-id">
