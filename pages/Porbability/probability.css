@@ -6,14 +6,14 @@
 }
 
 .prob-btn {
-  border: 1px outset black;
-  background-color: lightBlue;
+  border: none;
+  background-color: lightblue;
   height: 50px;
   width: 50px;
   cursor: pointer;
+  margin: 0.5rem;
 }
 
-.prob-btn:hover {
-  background-color: blue;
-  color: white;
+.probability-activity {
+  list-style: none;
 }

@@ -45,6 +45,11 @@
   .hero {
     gap: 4.8rem;
   }
+
+  .sub-nav-link:link,
+  .sub-nav-link:visited {
+    font-size: 1.1rem;
+  }
 }
 
 /**************************/
@@ -176,6 +181,15 @@
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .header-top {
+    padding: 0 2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.2rem;
   }
 
   .btn,

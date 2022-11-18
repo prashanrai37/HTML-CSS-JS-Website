@@ -33,15 +33,15 @@
 /* Image */
 /***************************/
 
-.zoom {
+/* .zoom {
   transition: transform 0.5s;
 }
 
 .zoom:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1);
-}
+} */
 
 /***************************/
 /* Video */

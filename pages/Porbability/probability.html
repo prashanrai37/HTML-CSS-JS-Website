@@ -28,7 +28,7 @@
     ></script>
 
     <script defer src="/general.js"></script>
-    <script defer src="mod_page.js"></script>
+    <script defer src="probability.js"></script>
 
     <link rel="stylesheet" href="/general.css" />
     <link rel="stylesheet" href="probability.css" />
@@ -268,20 +268,109 @@
             Probability Calculator
           </p>
 
-          <ul>
-            <li><input class="prob-btn" type="button" />1</li>
-            <li><input class="prob-btn" type="button" />2</li>
-            <li><input class="prob-btn" type="button" />3</li>
-            <li><input class="prob-btn" type="button" />4</li>
-            <li><input class="prob-btn" type="button" />5</li>
-            <li><input class="prob-btn" type="button" />6</li>
-            <li><input class="prob-btn" type="button" />7</li>
-            <li><input class="prob-btn" type="button" />8</li>
-            <li><input class="prob-btn" type="button" />9</li>
-            <li><input class="prob-btn" type="button" />10</li>
-          </ul>
+          <div class="centering-items">
+            <ul class="probability-activity" style="display: inline-flex">
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-1"
+                  onclick="update(1)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-2"
+                  onclick="update(2)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-3"
+                  onclick="update(3)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-4"
+                  onclick="update(4)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-5"
+                  onclick="update(5)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-6"
+                  onclick="update(6)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-7"
+                  onclick="update(7)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-8"
+                  onclick="update(8)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-9"
+                  onclick="update(9)"
+                />
+              </li>
+              <li>
+                <input
+                  class="prob-btn"
+                  type="button"
+                  id="pbtn-10"
+                  onclick="update(10)"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="container grid grid--3--cols"
+            style="padding-top: 2rem; text-align: center; margin-bottom: 1rem"
+          >
+            <p class="info-description">Percentage:</p>
+            <p class="info-description">Decimal:</p>
+            <p class="info-description">Fraction:</p>
+          </div>
+
+          <div class="container grid grid--3--cols" style="text-align: center">
+            <span class="info-description" id="percentage-placeholder">_</span>
+            <span class="info-description" id="decimal-placeholder">_</span>
+            <span class="info-description" id="fraction-placeholder">_</span>
+          </div>
         </div>
       </section>
+
+      <div class="spacer"></div>
 
       <section class="inpage-video">
         <div class="homepage-video" id="video-id">
@@ -300,56 +389,72 @@
 
       <section class="section-tab center-tab" style="background-color: #a2adb2">
         <div class="steps-tab">
-          <p class="info-description">
-            Calculate the upper quartile, lower quartile and range of these
-            numbers: 1, 2, 2, 5, 6, 8, 10
-          </p>
-          <form name="mod_quiz" id="mod_quiz">
+          <form name="prob_quiz" id="mod_quiz">
             <div>
-              <p class="question-text">Lower Quartile:</p>
-              <p class="question-text-sub">
-                <input type="radio" name="question1" value="1a" />a) 1
+              <p class="question-text">
+                1. A fair dice is rolled what is the probability it lands on 6:
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question1" value="1b" />b) 2
+                <input type="radio" name="question1" value="1a" />a)
+                <sup>1</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question1" value="1c" />b) 5
+                <input type="radio" name="question1" value="1b" />b)
+                <sup>2</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question1" value="1d" />b) 6
+                <input type="radio" name="question1" value="1c" />b)
+                <sup>5</sup>&frasl;<sub>6</sub>
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question1" value="1d" />b)
+                <sup>6</sup>&frasl;<sub>6</sub>
               </p>
             </div>
 
             <div>
-              <p class="question-text">Upper Quartile:</p>
-              <p class="question-text-sub">
-                <input type="radio" name="question2" value="2a" />a) 1
+              <p class="question-text">
+                2. A fair dice is rolled what is the probability it will land on
+                an even number:
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question2" value="2b" />b) 2
+                <input type="radio" name="question2" value="2a" />a)
+                <sup>1</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question2" value="2c" />c) 8
+                <input type="radio" name="question2" value="2b" />b)
+                <sup>2</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question2" value="2d" />d) 10
+                <input type="radio" name="question2" value="2c" />c)
+                <sup>3</sup>&frasl;<sub>6</sub>
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question2" value="2d" />d)
+                <sup>10</sup>&frasl;<sub>6</sub>
               </p>
             </div>
 
             <div>
-              <p class="question-text">Range:</p>
-              <p class="question-text-sub">
-                <input type="radio" name="question3" value="3a" />a) 5
+              <p class="question-text">
+                3. A coin is flipped 3 times, what is the probability it will
+                land on heads twice:
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question3" value="3b" />b) 6
+                <input type="radio" name="question3" value="3a" />a)
+                <sup>1</sup>&frasl;<sub>4</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question3" value="3c" />c) 8
+                <input type="radio" name="question3" value="3b" />b)
+                <sup>2</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question3" value="3d" />d) 9
+                <input type="radio" name="question3" value="3c" />c)
+                <sup>5</sup>&frasl;<sub>8</sub>
+              </p>
+              <p class="question-text-sub">
+                <input type="radio" name="question3" value="3d" />d)
+                <sup>4</sup>&frasl;<sub>8</sub>
               </p>
             </div>
 
