@@ -17,3 +17,13 @@
 .probability-activity {
   list-style: none;
 }
+
+.prob-list {
+  list-style: square;
+  padding-left: 2rem;
+}
+
+.prob-items {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}

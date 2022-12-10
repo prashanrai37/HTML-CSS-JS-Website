@@ -125,24 +125,27 @@
     </header>
 
     <main>
-      <section class="section-tab" style="background-color: #dadee0">
+      <section class="section-tab" style="background-color: #a2adb2">
         <div class="center-tab">
           <h1 class="heading-primary">Probabilty</h1>
           <p class="info-description">
             If you want to predict the chance of something happening in the
             future, you use probability.
           </p>
-          <ul>
-            <li>
+          <ul class="prob-list">
+            <li class="prob-items">
               An experiment is a repeatable process that gives rise to a number
               of outcomes.
             </li>
-            <li>An event is a collection (or set) of one or more outcomes.</li>
-            <li>
+            <li class="prob-items">
+              An event is a collection (or set) of one or more outcomes.
+            </li>
+            <li class="prob-items">
               A sample space is the set of all possible outcomes of an
               experiment.
             </li>
           </ul>
+          <br />
           <p class="info-description">
             In general: Probability of an event happening = Number of ways it
             can happen ÷ Total number of outcomes.
@@ -363,9 +366,13 @@
           </div>
 
           <div class="container grid grid--3--cols" style="text-align: center">
-            <span class="info-description" id="percentage-placeholder">_</span>
-            <span class="info-description" id="decimal-placeholder">_</span>
-            <span class="info-description" id="fraction-placeholder">_</span>
+            <span class="info-description" id="percentage-placeholder">
+              0%
+            </span>
+            <span class="info-description" id="decimal-placeholder">0</span>
+            <span class="info-description" id="fraction-placeholder">
+              0/10</span
+            >
           </div>
         </div>
       </section>
@@ -403,11 +410,11 @@
                 <sup>2</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question1" value="1c" />b)
+                <input type="radio" name="question1" value="1c" />c)
                 <sup>5</sup>&frasl;<sub>6</sub>
               </p>
               <p class="question-text-sub">
-                <input type="radio" name="question1" value="1d" />b)
+                <input type="radio" name="question1" value="1d" />d)
                 <sup>6</sup>&frasl;<sub>6</sub>
               </p>
             </div>
