@@ -23,7 +23,7 @@
     ></script>
 
     <link rel="stylesheet" href="/general.css" />
-    <link rel="stylesheet" href="mm.css" />
+    <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="/queries.css" />
 
     <title>Statistics & Computing - Homepage</title>
@@ -102,10 +102,56 @@
     </header>
 
     <main>
-      <section class="login-form">
-        <class class="form" id="login">
-          <h1 class="form-title">Login</h1>
-        </class>
+      <section
+        class="section-tab heading-tab"
+        style="background-color: #eceff0"
+      >
+        <div class="spacer"></div>
+        <div class="center-tab">
+          <h1
+            class="heading-primary"
+            style="text-align: center; text-decoration: none"
+          >
+            Login
+          </h1>
+          <div class="spacer"></div>
+          <form action="action_page.php" method="post">
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+              <div class="spacer"></div>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <div class="button" style="background-color: #f1f1f1">
+              <span class="psw"
+                >Forgot
+                <a href="#" style="text-decoration: none">password?</a></span
+              >
+            </div>
+          </form>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
       </section>
 
       <section class="footer">
